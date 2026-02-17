@@ -1,0 +1,34 @@
+package Leetcode;
+
+public class problem28 {
+
+    public static int palidromicSubstrings(String s){
+
+        if(s.length()==0){
+            return 0;
+        }
+
+        int count = 0;
+        
+        for(int center=0;center<2*s.length()-1;center++){
+            int left = center/2;
+            int right = left + center%2;
+
+            while(left>=0 && right<=s.length()-1 && s.charAt(left)==s.charAt(right)){
+                count++;
+                left--;
+                right++;
+                
+            }
+        }
+
+        return count;
+
+    }
+    public static void main(String[] args) {
+        String s = "abc";
+
+       int res = palidromicSubstrings(s);
+       System.out.println(res);
+    }
+}

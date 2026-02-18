@@ -14,11 +14,7 @@ public class problem140 {
             }
         }
 
-        if(maxValues[0] == tar[0] && maxValues[1] == tar[1] && maxValues[2] == tar[2]){
-            return true;
-        }
-        
-        return false;
+        return maxValues[0] == tar[0] && maxValues[1] == tar[1] && maxValues[2] == tar[2];
 
     }
 

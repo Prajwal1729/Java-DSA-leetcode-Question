@@ -14,7 +14,7 @@ public class problem139 {
             lastoccurence[s.charAt(i) - 'a'] = i;
         }
 
-        List<Integer> res = new ArrayList();
+        List<Integer> res = new ArrayList<>();
          int partend = 0;
          int partstart = 0;
 

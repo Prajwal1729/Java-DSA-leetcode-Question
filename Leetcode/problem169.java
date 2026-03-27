@@ -7,7 +7,8 @@ public class problem169 {
         if (mat.length == 0){
             return 0;
         }
-       int m = mat.length, n = mat[0].length;
+       m = mat.length;
+       n = mat[0].length;
        int cache[][] = new int[m][n];
        int ans = 0;
 

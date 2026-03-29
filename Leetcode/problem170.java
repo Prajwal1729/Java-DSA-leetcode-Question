@@ -15,6 +15,7 @@ public class problem170 {
         }
 
         public static double next(int val){
+            ++count;
             q.add(val);
             int tail = count > size ?(int) q.poll() : 0;
             windowSum = windowSum - tail + val;
